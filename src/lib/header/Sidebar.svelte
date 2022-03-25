@@ -6,7 +6,7 @@
 	<div class="flex flex-row p-4 items-center w-full">
 		<img src="https://upload.wikimedia.org/wikipedia/vi/c/c9/Logo_Thpt_Gia_Dinh.gif" alt="GiaDinh" width="110" height="110"/>
 		<div class="title relative text-center text-6xl w-full">
-			<b>GDI LIBRARY</b>
+			<b>GDI WIKI</b>
 		</div>
 	</div>
 	<div class="nav-link" class:active={$page.url.pathname === '/'}>
