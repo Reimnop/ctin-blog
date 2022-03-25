@@ -6,7 +6,7 @@
 <div class="flex flex-col md:flex-row">
 	<Sidebar />
 
-	<main class="m-4 flex-1">
+	<main class="flex-1 m-4">
 		<slot />
 	</main>
 </div>
