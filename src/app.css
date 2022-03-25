@@ -7,13 +7,21 @@
 
 body {
 	font-family: "Inter", sans-serif;
-	@apply bg-neutral-800 text-neutral-300
+	@apply bg-slate-700 text-slate-300
+}
+
+.shadow-colored {
+	@apply shadow shadow-slate-900
 }
 
 .title {
 	font-family: "Imbue", sans-serif;
 }
 
+.nav-link {
+	@apply mx-2 px-2 h-12 flex items-center
+}
+
 .active {
-	@apply bg-neutral-300 text-slate-700 shadow rounded p-2 duration-200 text-center w-full sm:w-auto
+	@apply bg-slate-200 text-slate-800 shadow-colored rounded duration-200
 }
