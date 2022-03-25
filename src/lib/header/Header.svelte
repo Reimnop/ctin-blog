@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<div class="flex justify-left">
+<div class="flex justify-left ml-32">
 	<img src="https://filethpt.hcm.edu.vn//UploadImages/thptgiadinh/logo/Logo-GiaDinh.jpg" alt="GiaDinh" 
 		width="119"
 	/>
