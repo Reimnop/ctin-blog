@@ -1,14 +1,14 @@
-@import '@fontsource/fira-mono';
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-	font-family: "Fira Mono", monospace;
-	@apply bg-neutral-800
+	font-family: "Inter", sans-serif;
+	@apply bg-neutral-800 text-neutral-300
 }
 
 .active {
-	@apply bg-neutral-300 text-slate-700 shadow px-2 duration-200
+	@apply bg-neutral-300 text-slate-700 shadow px-2 duration-200 text-center w-full sm:w-auto
 }

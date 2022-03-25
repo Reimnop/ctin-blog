@@ -5,6 +5,6 @@
 
 <Header />
 
-<main class="p-4">
+<main class="m-4">
 	<slot />
 </main>

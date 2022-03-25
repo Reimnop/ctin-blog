@@ -18,7 +18,7 @@
 	<title>About</title>
 </svelte:head>
 
-<div class="text-gray-300">
+<div>
 	<h1>About this app</h1>
 
 	<p>
