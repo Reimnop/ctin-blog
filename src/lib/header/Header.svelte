@@ -9,7 +9,7 @@
 			<b>GDI LIBRARY</b>
 		</div>
 	</div>
-	<div class="bg-neutral-700 py-2 w-full sm:h-16 shadow flex flex-col sm:flex-row justify-evenly items-center gap-2">
+	<div class="bg-neutral-700 py-2 w-full sm:h-16 shadow flex flex-col sm:flex-row justify-evenly items-center gap-4">
 		<div class:active={$page.url.pathname === '/'}>
 			<a sveltekit:prefetch href="/">HOMEPAGE</a>
 		</div>
