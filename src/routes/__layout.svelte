@@ -3,7 +3,7 @@
 	import '../app.css';
 </script>
 
-<div class="flex flex-row">
+<div class="flex flex-col md:flex-row">
 	<Sidebar />
 
 	<main class="m-4 flex-1">
