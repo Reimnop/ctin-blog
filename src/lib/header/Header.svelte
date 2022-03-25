@@ -2,8 +2,21 @@
 	import { page } from '$app/stores';
 </script>
 
+<div class="flex justify-left ml-[16px] mt-[16px]">
+	<img src="https://upload.wikimedia.org/wikipedia/vi/c/c9/Logo_Thpt_Gia_Dinh.gif" alt="GiaDinh" 
+		width="110"
+		height="110"
+	/>
+	<div class="title">
+		<b>GDI LIBRARY</b>
+	</div>
+</div>
+<!-- <div class="title">
+	<b>GDI LIBRARY</b>
+</div> -->
+
 <header class="flex flex-col sm:flex-row items-start">
-	<img src="https://upload.wikimedia.org/wikipedia/vi/c/c9/Logo_Thpt_Gia_Dinh.gif" alt="GiaDinh" width="119"/>
+	<!-- <img src="https://upload.wikimedia.org/wikipedia/vi/c/c9/Logo_Thpt_Gia_Dinh.gif" alt="GiaDinh" width="119"/> -->
 	<div class="bg-neutral-700 py-2 m-4 w-full">
 		<ul class="flex flex-col sm:flex-row items-center gap-2 justify-evenly text-neutral-300">
 			<li class:active={$page.url.pathname === '/'}>

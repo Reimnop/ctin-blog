@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Imbue&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,4 +12,14 @@ body {
 
 .active {
 	@apply bg-neutral-300 text-slate-700 shadow px-2 duration-200 text-center w-full sm:w-auto
+}
+
+.title {
+	font-family: "Imbue", sans-serif;
+	position: relative;
+	margin-left: 546px;
+	margin-right: auto;
+	font-size: 57px;
+	margin-top: 17px;
+	margin-bottom: 5;
 }
