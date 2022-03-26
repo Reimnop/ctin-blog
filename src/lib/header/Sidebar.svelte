@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import NavLink from "../../routes/NavLink.svelte";
 
 	let open = true;
 </script>
@@ -18,18 +19,10 @@
 	</div>
 	{#if open}
 		<div class="flex flex-col gap-4">
-			<a sveltekit:prefetch href="/" class="nav-link" class:nav-active={$page.url.pathname === '/'}>
-				🏠 HOMEPAGE
-			</a>
-			<a sveltekit:prefetch href="/problems" class="nav-link" class:nav-active={$page.url.pathname === '/problems'}>
-				📜 PROBLEMS
-			</a>
-			<a sveltekit:prefetch href="/about" class="nav-link" class:nav-active={$page.url.pathname === '/about'}>
-				🎤 GIỚI THIỆU
-			</a>
-			<a sveltekit:prefetch href="/contact" class="nav-link" class:nav-active={$page.url.pathname === '/contact'}>
-				📞 LIÊN HỆ
-			</a>
+			<NavLink href="/" content="🏠 HOMEPAGE"/>
+			<NavLink href="/problems" content="📜 PROBLEMS"/>
+			<NavLink href="/about" content="🎤 GIỚI THIỆU"/>
+			<NavLink href="/contact" content="📞 LIÊN HỆ"/>
 		</div>
 	{/if}
 </div>
