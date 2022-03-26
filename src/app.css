@@ -25,3 +25,7 @@ body {
 .active {
 	@apply bg-slate-200 pl-4 text-slate-800 shadow-colored rounded
 }
+
+.button-rotated {
+	@apply rotate-180
+}

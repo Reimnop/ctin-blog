@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 
-	export let open = true;
+	let open = true;
 </script>
 
 <div class="sticky w-full md:w-96 md:h-[100vh] bg-slate-800 flex flex-col gap-4 shadow-colored">
@@ -11,18 +11,25 @@
 			<b>GDI WIKI</b>
 		</div>
 	</div>
-	<div class="flex flex-col gap-4">
-		<div class="nav-link" class:active={$page.url.pathname === '/'}>
-			<a sveltekit:prefetch href="/">🏠 HOMEPAGE</a>
-		</div>
-		<div class="nav-link" class:active={$page.url.pathname === '/problems'}>
-			<a sveltekit:prefetch href="/problems">📜 PROBLEMS</a>
-		</div>
-		<div class="nav-link" class:active={$page.url.pathname === '/about'}>
-			<a sveltekit:prefetch href="/about">🎤 GIỚI THIỆU</a>
-		</div>
-		<div class="nav-link" class:active={$page.url.pathname === '/contact'}>
-			<a sveltekit:prefetch href="/contact">📞 LIÊN HỆ</a>
-		</div>
+	<div class="flex items-center justify-center self-end bg-slate-300 text-slate-700 w-8 h-8 rounded m-2 duration-200 hover:scale-105 md:hidden" class:button-rotated={!open}>
+		<button class="text-2xl rounded duration-200" on:click={() => open = !open}>
+			˅
+		</button>
 	</div>
+	{#if open}
+		<div class="flex flex-col gap-4">
+			<div class="nav-link" class:active={$page.url.pathname === '/'}>
+				<a sveltekit:prefetch href="/">🏠 HOMEPAGE</a>
+			</div>
+			<div class="nav-link" class:active={$page.url.pathname === '/problems'}>
+				<a sveltekit:prefetch href="/problems">📜 PROBLEMS</a>
+			</div>
+			<div class="nav-link" class:active={$page.url.pathname === '/about'}>
+				<a sveltekit:prefetch href="/about">🎤 GIỚI THIỆU</a>
+			</div>
+			<div class="nav-link" class:active={$page.url.pathname === '/contact'}>
+				<a sveltekit:prefetch href="/contact">📞 LIÊN HỆ</a>
+			</div>
+		</div>
+	{/if}
 </div>
