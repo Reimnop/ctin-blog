@@ -22,7 +22,7 @@ body {
 	@apply mx-2 px-2 h-12 flex items-center duration-200 hover:translate-x-2
 }
 
-.active {
+.nav-active {
 	@apply bg-slate-200 pl-4 text-slate-800 shadow-colored rounded
 }
 
