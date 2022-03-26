@@ -18,18 +18,18 @@
 	</div>
 	{#if open}
 		<div class="flex flex-col gap-4">
-			<div class="nav-link" class:nav-active={$page.url.pathname === '/'}>
-				<a sveltekit:prefetch href="/">🏠 HOMEPAGE</a>
-			</div>
-			<div class="nav-link" class:nav-active={$page.url.pathname === '/problems'}>
-				<a sveltekit:prefetch href="/problems">📜 PROBLEMS</a>
-			</div>
-			<div class="nav-link" class:nav-active={$page.url.pathname === '/about'}>
-				<a sveltekit:prefetch href="/about">🎤 GIỚI THIỆU</a>
-			</div>
-			<div class="nav-link" class:nav-active={$page.url.pathname === '/contact'}>
-				<a sveltekit:prefetch href="/contact">📞 LIÊN HỆ</a>
-			</div>
+			<a sveltekit:prefetch href="/" class="nav-link" class:nav-active={$page.url.pathname === '/'}>
+				🏠 HOMEPAGE
+			</a>
+			<a sveltekit:prefetch href="/problems" class="nav-link" class:nav-active={$page.url.pathname === '/problems'}>
+				📜 PROBLEMS
+			</a>
+			<a sveltekit:prefetch href="/about" class="nav-link" class:nav-active={$page.url.pathname === '/about'}>
+				🎤 GIỚI THIỆU
+			</a>
+			<a sveltekit:prefetch href="/contact" class="nav-link" class:nav-active={$page.url.pathname === '/contact'}>
+				📞 LIÊN HỆ
+			</a>
 		</div>
 	{/if}
 </div>
