@@ -1,6 +1,5 @@
 <script>
-	import { page } from '$app/stores';
-	import NavLink from "../../routes/NavLink.svelte";
+	import NavLink from "./NavLink.svelte";
 
 	let open = true;
 </script>
@@ -19,10 +18,10 @@
 	</div>
 	{#if open}
 		<div class="flex flex-col gap-4">
-			<NavLink href="/" content="🏠 HOMEPAGE"/>
-			<NavLink href="/problems" content="📜 PROBLEMS"/>
-			<NavLink href="/about" content="🎤 GIỚI THIỆU"/>
-			<NavLink href="/contact" content="📞 LIÊN HỆ"/>
+			<NavLink href="/">🏠 HOMEPAGE</NavLink>
+			<NavLink href="/problems">📜 PROBLEMS</NavLink>
+			<NavLink href="/about">🎤 GIỚI THIỆU</NavLink>
+			<NavLink href="/contact">📞 LIÊN HỆ</NavLink>
 		</div>
 	{/if}
 </div>
