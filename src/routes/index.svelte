@@ -3,6 +3,9 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Homepage</title>
 </svelte:head>
 
+<div>
+	<h1>Hello, world! This is homepage.</h1>
+</div>
