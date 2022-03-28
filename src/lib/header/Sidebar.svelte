@@ -1,8 +1,15 @@
 <script>
 	import NavLink from "./NavLink.svelte";
 
-	let open = true;
+	$: outerWidth = 0
+	$: innerWidth = 0
+	$: outerHeight = 0
+	$: innerHeight = 0
+
+	let open = false;
 </script>
+
+<svelte:window bind:innerWidth bind:outerWidth bind:innerHeight bind:outerHeight />
 
 <div class="sticky w-full md:w-96 md:h-[100vh] bg-slate-800 flex flex-col gap-4 shadow-colored">
 	<div class="flex flex-row p-4 items-center w-full duration-200 hover:scale-105">
@@ -16,7 +23,7 @@
 			˅
 		</button>
 	</div>
-	{#if open}
+	{#if open || innerWidth > 768} <!-- md = 768px -->
 		<div class="flex flex-col gap-4">
 			<NavLink href="/">🏠 HOMEPAGE</NavLink>
 			<NavLink href="/problems">📜 PROBLEMS</NavLink>
