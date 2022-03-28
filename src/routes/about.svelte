@@ -16,6 +16,7 @@
 
 <svelte:head>
 	<title>About</title>
+	<link rel="icon" type="image/png" href="microphone.png" />
 </svelte:head>
 
 <div>

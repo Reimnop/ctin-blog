@@ -16,6 +16,7 @@
 
 <svelte:head>
 	<title>Problems</title>
+	<link rel="icon" type="image/png" href="scroll.png" />
 </svelte:head>
 
 <div>
