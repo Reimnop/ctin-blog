@@ -8,5 +8,5 @@
 </svelte:head>
 
 <div>
-	<h1>rayngu2005@gmail.com</h1>
+	<h1>cặc</h1>
 </div>
