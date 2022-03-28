@@ -6,7 +6,7 @@
 
 <div class="sticky w-full md:w-96 md:h-[100vh] bg-slate-800 flex flex-col gap-4 shadow-colored">
 	<div class="flex flex-row p-4 items-center w-full duration-200 hover:scale-105">
-		<img src="https://upload.wikimedia.org/wikipedia/vi/c/c9/Logo_Thpt_Gia_Dinh.gif" alt="GiaDinh" width="110" height="110"/>
+		<img src="logo_gd.png" alt="GiaDinh" width="110" height="110"/>
 		<div class="title relative text-center text-6xl w-full">
 			<b>GDI WIKI</b>
 		</div>
