@@ -3,10 +3,8 @@
 	import '../app.css';
 </script>
 
-<div class="flex flex-col md:flex-row">
-	<Sidebar />
+<Sidebar />
 
-	<main class="flex-1 p-4">
-		<slot />
-	</main>
-</div>
+<main class="flex-1 p-4 md:ml-96">
+	<slot />
+</main>
